@@ -82,9 +82,9 @@ compile_smokeping() {
 	[[ -e /tmp/smokeping ]] && rm -rf /tmp/smokeping
 	mkdir -p /tmp/smokeping
 	cd /tmp/smokeping
-	wget https://ghproxy.com/https://github.com/oetiker/SmokePing/releases/download/2.7.3/smokeping-2.7.3.tar.gz
-	tar xzvf smokeping-2.7.3.tar.gz
-	cd smokeping-2.7.3
+	wget https://ghproxy.com/https://github.com/oetiker/SmokePing/releases/download/2.8.2/smokeping-2.8.2.tar.gz
+	tar xzvf smokeping-2.8.2.tar.gz
+	cd smokeping-2.8.2
 	./configure --prefix=/usr/local/smokeping
 	if type -P make && ! type -P gmake; then
 		ln -s $(type -P make) /usr/bin/gmake
