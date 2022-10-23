@@ -1,5 +1,9 @@
 # SmokePing 一键脚本 for 宝塔/LNMP
 
+## 更新日志
+### 2022-10-24
+1. GitHub 替换为适合国内安装的反代镜像。
+2. 将 SmokePing 更新至最新版本
 [SmokePing](https://oss.oetiker.ch/smokeping) 是由 [RRDtool](https://oss.oetiker.ch/rrdtool) 的作者 [Tobi Oetiker](https://www.oetiker.ch) 开发的一款监控网络状态和稳定性的开源软件。SmokePing 会不断向目标发送各种类型的数据包，并对返回值进行测量和记录，通过 RRDtool 制图程序图形化地展示在各个时段内网络的延迟和丢包情况，帮助我们更清楚、更直观地了解监控机和监控目标之间短期和长期的网络状况。
 
 本项目旨在使 SmokePing 运行在 [Nginx](https://nginx.org) 上而非大部分教程指导的运行在 [Apache 2](https://httpd.apache.org) 上并在已经安装 Web 服务的系统上对原有环境无损的情况下快速地部署 SmokePing 进行监控。
@@ -13,7 +17,18 @@
 ## 安装
 ### 宝塔面板
 1. 进入宝塔面板，添加一个站点。填写域名时务必将第一行的域名记住。不要急于修改网站配置文件和添加 SSL。
-2. 执行 `bash -c "$(curl -L https://ghproxy.com/https://raw.githubusercontent.com/isyekong/smokeping-lnmp/main/install.sh)"`。Nginx 站点配置文件目录为 `/www/server/panel/vhost/nginx`；Nginx fastcgi_params 目录为 `/www/server/nginx/conf`。
+2. 执行 
+```
+bash -c "$(curl -L https://ghproxy.com/https://raw.githubusercontent.com/isyekong/smokeping-lnmp/main/install.sh)"
+```
+Nginx 站点配置文件目录为 
+```
+/www/server/panel/vhost/nginx
+```
+Nginx fastcgi_params 目录为 
+```
+/www/server/nginx/conf
+```
 3. 脚本执行完成后，可以进入宝塔面板对站点进行添加 SSL 证书等操作。
 
 ### LNMP.org 一键包
