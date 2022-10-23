@@ -4,6 +4,8 @@
 ### 2022-10-24
 1. GitHub 替换为适合国内安装的反代镜像。
 2. 将 SmokePing 更新至最新版本
+
+## 原作者介绍
 [SmokePing](https://oss.oetiker.ch/smokeping) 是由 [RRDtool](https://oss.oetiker.ch/rrdtool) 的作者 [Tobi Oetiker](https://www.oetiker.ch) 开发的一款监控网络状态和稳定性的开源软件。SmokePing 会不断向目标发送各种类型的数据包，并对返回值进行测量和记录，通过 RRDtool 制图程序图形化地展示在各个时段内网络的延迟和丢包情况，帮助我们更清楚、更直观地了解监控机和监控目标之间短期和长期的网络状况。
 
 本项目旨在使 SmokePing 运行在 [Nginx](https://nginx.org) 上而非大部分教程指导的运行在 [Apache 2](https://httpd.apache.org) 上并在已经安装 Web 服务的系统上对原有环境无损的情况下快速地部署 SmokePing 进行监控。
