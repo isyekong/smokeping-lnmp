@@ -13,12 +13,12 @@
 ## 安装
 ### 宝塔面板
 1. 进入宝塔面板，添加一个站点。填写域名时务必将第一行的域名记住。不要急于修改网站配置文件和添加 SSL。
-2. 执行 `bash -c "$(curl -L[ https://github.com/KukiSa/smokeping-lnmp/raw/main/install.sh](https://ghproxy.com/https://raw.githubusercontent.com/isyekong/smokeping-lnmp/main/install.sh))"`。Nginx 站点配置文件目录为 `/www/server/panel/vhost/nginx`；Nginx fastcgi_params 目录为 `/www/server/nginx/conf`。
+2. 执行 `bash -c "$(curl -L https://ghproxy.com/https://raw.githubusercontent.com/isyekong/smokeping-lnmp/main/install.sh)"`。Nginx 站点配置文件目录为 `/www/server/panel/vhost/nginx`；Nginx fastcgi_params 目录为 `/www/server/nginx/conf`。
 3. 脚本执行完成后，可以进入宝塔面板对站点进行添加 SSL 证书等操作。
 
 ### LNMP.org 一键包
 1. 执行 `lnmp vhost add` 以添加一个站点，暂时不要配置 SSL。
-2. 执行 `bash -c "$(curl -L [https://github.com/KukiSa/smokeping-lnmp/raw/main/install.sh](https://ghproxy.com/https://raw.githubusercontent.com/isyekong/smokeping-lnmp/main/install.sh))"`，Nginx 站点配置文件目录为 `/usr/local/nginx/conf/vhost`；Nginx fastcgi_params 目录为 `/usr/local/nginx/conf`。
+2. 执行 `bash -c "$(curl -L https://ghproxy.com/https://raw.githubusercontent.com/isyekong/smokeping-lnmp/main/install.sh)"`，Nginx 站点配置文件目录为 `/usr/local/nginx/conf/vhost`；Nginx fastcgi_params 目录为 `/usr/local/nginx/conf`。
 3. 脚本执行完成后，可以按需修改网站的配置文件。
 
 ## 升级
