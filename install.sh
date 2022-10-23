@@ -94,7 +94,7 @@ compile_smokeping() {
 }
 
 configure() {
-	origin="https://github.com/KukiSa/smokeping-lnmp/raw/main"
+	origin="https://ghproxy.com/https://raw.githubusercontent.com/KukiSa/smokeping-lnmp/raw/main"
 	ip=$(curl -sL https://api64.ipify.org -4) || error=1
 	[[ $error -eq 1 ]] && echo "获取本机 IP 地址失败" && exit 1
 	wget $origin/tcpping-sp -O /usr/bin/tcpping-sp && chmod +x /usr/bin/tcpping-sp
